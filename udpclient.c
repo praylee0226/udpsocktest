@@ -51,9 +51,9 @@ int main(int argc, char **argv)
 		
 	memset(&serv_adr, 0, sizeof(serv_adr));
 
-    servaddr.sin_family = AF_INET; 
-    servaddr.sin_port = htons(atoi(argv[2]));
-    servaddr.sin_addr.s_addr = inet_addr(argv[1]); 
+    serv_addr.sin_family = AF_INET; 
+    serv_addr.sin_port = htons(atoi(argv[2]));
+    serv_addr.sin_addr.s_addr = inet_addr(argv[1]); 
     
     while(1)
     {
